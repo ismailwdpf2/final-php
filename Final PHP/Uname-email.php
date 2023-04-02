@@ -9,10 +9,8 @@ if(isset($_POST['submit'])){
 	else echo "Username done.<br>";
 	$ppattern = "/\S+@\S+\.\S+/";
 	if(preg_match($ppattern , $email)){echo "valid email<br>";}
-	else {echo "invalid email<br>";}
-	
-	}
-	
+	else {echo "invalid email<br>";}	
+	}	
 ?>
 <!doctype html>
 <html>
@@ -26,7 +24,6 @@ if(isset($_POST['submit'])){
 	}
 </style>
 </head>
-
 <body>
 <form method="post">
 <input type="text" name="uname"placeholder="User Name: " required ><br>
